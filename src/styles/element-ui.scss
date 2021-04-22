@@ -1,0 +1,362 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+.el-radio__label{
+  padding-left: 2px;
+}
+.el-table__fixed::before, .el-table__fixed-right::before{
+  height: 0;
+}
+.el-button+.el-button{
+  margin-left: 5px;
+}
+
+.el-form-item {
+  margin-bottom: 16px;
+  margin-right: 0px !important;
+}
+.el-table .stripe-row {
+  background: #F8F8F8;
+}
+.el-table th>.cell {
+    color: #3C3C3C !important;
+}
+.el-table thead {
+  background-color: #f1f1f1;
+  color: #3C3C3C;
+  font-size: 14px;
+  font-family: AlibabaPuHuiTiM;
+}
+th {
+  font-weight: normal !important;
+}
+.el-table th.is-leaf, .el-table td {
+  border-bottom: 1px solid white;
+}
+.el-table::before {
+  height: 0px;
+}
+.el-table--mini {
+  font-size: 14px;
+}
+.el-table__body tr.current-row>td {
+  background: #E9F3FF !important;
+}
+.el-table tr {
+  height: 40px;
+}
+.el-dialog__title {
+  font-size: 20px;
+  color: #3C3C3C;
+}
+.el-form-item__label {
+  color: #6C6C6C;
+  padding: 0 14px 0 0;
+}
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before {
+    content: '*';
+    color: #D52648;
+    margin-right: 4px;
+}
+.el-form-item--small .el-form-item__error {
+  padding-top: 3px;
+  padding-left: 9px;
+}
+input::-webkit-input-placeholder {
+  color: #9C9C9C;
+}
+input::-moz-input-placeholder {
+  color: #9C9C9C;
+}
+input::-ms-input-placeholder {
+  color: #9C9C9C;
+}
+.el-input__inner {
+  padding: 0 8px;
+  color: #3c3c3c
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+  background-color: #2A8DFF;
+  color: white;
+  border-radius: 2px;
+}
+.el-select-dropdown__item {
+  padding: 0px 4px;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 24px;
+  line-height: 24px;
+}
+.el-cascader-node {
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+}
+.el-cascader-menu__wrap {
+  height: 180px;
+}
+.el-icon-search {
+  color: #666666;
+  &:before {
+    content:"\e636";
+    font-family: "iconfont";
+    font-size: 17px;
+  }
+}
+.el-input--small .el-input__icon {
+  &:focus {
+    color: red !important;
+  }
+}
+.el-icon-arrow-left {
+  &:before {
+    content:"\e62a";
+    font-family: "iconfont";
+    font-size: 2px;
+  }
+}
+.el-icon-arrow-right {
+  &:before {
+    content:"\e621";
+    font-family: "iconfont";
+    font-size: 2px;
+  }
+}
+
+.el-icon-arrow-up {
+  &:before {
+    content:"\e61d";
+    font-family: "iconfont";
+    font-size: 2px;
+    color: #3c3c3c;
+  }
+}
+
+.el-icon-arrow-down {
+  &:before {
+    content:"\e620";
+    font-family: "iconfont";
+    font-size: 2px;
+    color: #3c3c3c;
+  }
+}
+
+.el-pagination__total {
+  height: 26px !important;
+  line-height: 26px !important;
+}
+
+.el-table--border th, .el-table--border td {
+  border-right: 0px;
+}
+.el-table--border {
+  border: 0px;
+  border-bottom: 1px solid #F1F1F1;
+}
+.el-table--border th {
+  border: 0px;
+}
+.border-none {
+  border: none;
+}
+.el-table--group::after, .el-table--border::after {
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100%;
+}
+.el-dialog--center .el-dialog__body {
+  text-align: center;
+}
+.el-input__suffix {
+  cursor: pointer;
+}
+.el-textarea__inner {
+  padding: 5px 8px;
+}
+.el-table__body tr.hover-row>td {
+  background: rgba(42,141,255,0.05);
+}
+.el-pager li{
+   font-family: 'DINProM';
+}
+.el-cus-pagination {
+  font-weight:normal !important;
+  font-family: 'DINProM';
+  .el-input__inner {
+    font-family: 'DINProM';
+  }
+}
+.el-select-dropdown__list {
+  font-family: 'DINProM';
+}
+.el-cascader__search-input {
+  margin: 2px 0 2px 8px;
+}
+.el-select__input {
+  margin-left: 8px;
+}
+.el-cascader__tags .el-tag {
+  background: rgba(241,241,241,1);
+}
+
+// 固定列的滚动条样式
+.el-table__fixed-right-patch {
+  background-color: #e7ebef;
+}
+
+// 提示框的样式
+.el-message-box {
+  .el-message-box__header {
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    height: 55px;
+    .el-message-box__title {
+      display: inline-block;
+      font-size: 20px;
+      color: #3c3c3c;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+    .el-message-box__headerbtn {
+      top: 20px;
+      right: 0;
+    }
+  }
+  .el-message-box__content {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+
+.dialog-cus-pagination {
+  float: right;
+}
+
+.el-select {
+  width: 100%;
+}
+.el-radio__input.is-disabled+span.el-radio__label {
+  font-weight: 400;
+  color: #3C3C3C;
+  cursor: not-allowed;
+}
+.el-loading-spinner .circular{
+  width: 42px;
+  height: 42px;
+  animation: loading-rotate 2s linear infinite;
+  display: none;
+}
+.el-loading-spinner{
+  background: url(../assets/images/loading.gif) no-repeat;
+  background-size: 48px 48px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 45%;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+  border-color: #D8D8D8;
+  background-color: #fff;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #D8D8D8;
+}
+.el-checkbox__inner::after {
+  border-color: #9c9c9c;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #3c3c3c;
+  font-weight: 550;
+}
+label.el-form-item__label {
+  white-space: nowrap;
+}
+
+.el-submenu.is-active .el-submenu__title {
+  border-bottom-color: #F1F1F1;
+}

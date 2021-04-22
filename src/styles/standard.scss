@@ -1,0 +1,45 @@
+// 平台PC端颜色规范
+// 主题颜色
+$main-theme-color: #2A8DFF;
+// 辅助色
+$assist-purple: #7A79FF;
+$assist-orange: #FE9857;
+$assist-blue: #58CFFF;
+// 渐变色
+$gradient-blue: linear-gradient(180deg, #47B8FF 0%, #2A8DFF 100%);
+$gradient-paleblue: linear-gradient(360deg, #00CACC 0%, #0BB3F1 99%);
+$gradient-purple: linear-gradient(360deg, #6B6AFD 0%, #7A79FF 100%);
+$gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
+$gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
+
+// 场景色
+$success-color: #23B899;
+$fail-color: #D52648;
+$warn-color: #FE9857;
+$default-color: #6A81AE;
+$prompt-color: #F8B816;
+// 文字颜色
+$text-1: #2A8DFF; //用于标题、链接文字等
+$text-2: #3C3C3C; //用于正文、标题等
+$text-3: #6C6C6C; //用于正文等
+$text-4: #CCCCCC; //用于次级正文、辅助性文本等
+// 边框/线条
+$border-1: #D8D8D8; //用于默认边框色、分割线等
+$border-2: #E1E1E1; //用于边框色等
+$border-3: #F1F1F1; //用于辅助边框色等
+$border-4: #2A8DFF; //用于边框悬停颜色等
+// 背景颜色
+$back-white: #FFFFFF; //用于内容区域背景色等
+$back-main: #E7EAF1; //主背景色
+$back-table: #F1F1F1; //用于表格表头、列表表头背景色等
+$back-table-odd: #FBFDFF; //用于列表奇数行背景色
+$back-table-even: #F8F8F8; //用于列表偶数行/禁用状态背景色
+$back-table-active: #E9F3FF; //用于列表当前操作行/选中行背景色
+
+// Color Palette
+$black: #000;
+$white: #fff;
+$red: #ee0a24;
+$blue: #1989fa;
+$orange: #ff976a;
+$green: #07c160;

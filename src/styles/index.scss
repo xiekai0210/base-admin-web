@@ -1,0 +1,314 @@
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './standard.scss';
+
+body {
+  height: 100%;
+  min-width: 1366px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: "AlibabaPuHuiTiR";
+  color: $text-2;
+}
+
+// 适配组件库中按钮组件
+button {
+  font-family: 'AlibabaPuHuiTiR';
+  line-height: normal;
+  font-size: revert;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiM";
+  src: url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Medium.eot?t=1545807318834#iefix') format('embedded-opentype'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Medium.woff?t=1545807318834') format('woff'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Medium.ttf?t=1545807318834') format('truetype'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Medium.svg?t=1545807318834#iconfont') format('svg'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {
+  font-family: "AlibabaPuHuiTiR";
+  src: url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Regular.eot?t=1545807318834#iefix') format('embedded-opentype'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Regular.woff?t=1545807318834') format('woff'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Regular.ttf?t=1545807318834') format('truetype'),
+    url('../assets/font/AlibabaPuHuiTi/Alibaba-PuHuiTi-Regular.svg?t=1545807318834#iconfont') format('svg'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face{
+  font-family: "DINProM";
+  src: url('../assets/font/DINPro/DINPro-Medium.eot?t=1545807318834#iefix') format('embedded-opentype'),
+    url('../assets/font/DINPro/DINPro-Medium.woff?t=1545807318834') format('woff'),
+    url('../assets/font/DINPro/DINPro-Medium.ttf?t=1545807318834') format('truetype'),
+    url('../assets/font/DINPro/DINPro-Medium.svg?t=1545807318834#iconfont') format('svg');
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// 块区域中头部区域
+.header {
+  &-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: $text-2;
+    padding-bottom: 10px;
+  }
+  &-right {
+    float: right;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "AlibabaPuHuiTiM";
+    color: $text-2;
+  }
+  &-search {
+    padding-bottom: 10px;
+    .search-box {
+      display: inline-block;
+      min-width: 185px;
+      width: 25%;
+    }
+    .search-title {
+      font-size: 14px;
+      font-weight: 400;
+      color: $text-3;
+      margin-right: 17px;
+    }
+  }
+  &-operation {
+    padding-bottom: 10px;
+
+  }
+}
+
+// 图标按钮提示样式
+.gw-tooltip {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  background: $back-white;
+  border-radius: 2px;
+  font-family: "AlibabaPuHuiTiR" !important;
+  color: $text-2;
+  font-size: 12px;
+  &.width40 {
+    width: 40px !important;
+  }
+  svg-icon {
+
+  }
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="bottom"] .popper__arrow {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="bottom"] .popper__arrow:after {
+  border-bottom-color: $back-white;
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="top"] .popper__arrow {
+  border-top-color: rgba(124, 124, 124, 0.16);
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="top"] .popper__arrow:after {
+  border-top-color: $back-white;
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="right"] .popper__arrow {
+  border-right-color: rgba(124, 124, 124, 0.16);
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="right"] .popper__arrow:after {
+  border-right-color: $back-white;
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="left"] .popper__arrow {
+  border-left-color: rgba(124, 124, 124, 0.16);
+}
+.gw-tooltip.el-tooltip__popper[x-placement^="left"] .popper__arrow:after {
+  border-left-color: $back-white;
+}
+.tooltip-drop-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .drop-down-element {
+    margin-bottom: 10px;
+    margin-left: 2px;
+    flex: 1;
+    &.margin0 {
+      margin-bottom: 0;
+    }
+  }
+}
+.el-tooltip {
+  outline: transparent;
+}
+
+// 游标指针
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// 弹框
+.el-dialog {
+  box-shadow: 0px 0px 4px 0px rgba(124, 124, 124, 0.35);
+}
+.el-dialog__header {
+  text-align: left;
+  border-bottom: 1px solid $border-1;
+  padding: 20px 0 20px 0;
+  padding-bottom: 20px;
+  margin: 0 36px 0 36px;
+  font-family: "DINProM";
+}
+.el-dialog__headerbtn {
+  position: absolute;
+  top: 20px;
+  right: 27px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: $text-2;
+}
+.el-dialog__body {
+  padding: 10px 36px;
+}
+.footer-area {
+  width: 100%;
+  text-align: right;
+  margin: 16px 0px;
+}
+// tabs标签页
+.el-tabs__header {
+  margin: 0px;
+}
+.el-tabs__nav-wrap::after {
+  height: 0px;
+}
+.el-tabs__item {
+  padding: 0 20px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 40px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-2;
+  font-family: "DINProM";
+  position: relative;
+}
+.el-tabs__item.is-active {
+  color: $text-2;
+}
+.el-tabs__active-bar {
+  background-color: $main-theme-color;
+}
+// 表单
+.gw-form-item-content {
+  display: flex;
+  .form-item {
+    flex: 1;
+  }
+  .last-form-item {
+    margin-bottom: 0px;
+  }
+}
+// 表格区域样式
+.table {
+  display: flex;
+  border: 1px solid $back-table;
+  border-radius: 3px;
+  width: 100%;
+  padding: 3px 4px;
+  &-chunk {
+    background-color: $back-white;
+    overflow: auto;
+    &.left {
+      flex: 1;
+    }
+    &.right {
+      flex: 4;
+    }
+  }
+  &-line {
+    width: 20px;
+    height: 100%
+  }
+}
+
+// 步骤条
+.stepBox{
+  height: 80px;
+  margin-bottom: 30px;
+  border-bottom:1px dashed $border-1;
+}
+
+// 面包屑
+.breadcrumb {
+  height: 20px;
+  &-item {
+    float: left;
+    span {
+      cursor: pointer;
+      font-size: 14px;
+      font-family: "AlibabaPuHuiTiR" ;
+    }
+    .selected {
+      color: $text-1;
+    }
+  }
+  &-close {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    &:hover {
+      background: $border-3;
+    }
+  }
+}
+
+// 圆形图标+文字按钮
+.circle-icon-btn {
+  float: right;
+  width: 80px;
+  height: 30px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 15px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &.width120 {
+    width: 120px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 4px;
+    margin-right: 8px;
+  }
+  .text {
+    font-size: 14px;
+    color: white;
+  }
+  .arrow {
+    font-size: 12px;
+    padding: 2px 0 0 4px;
+    color: white;
+  }
+}
